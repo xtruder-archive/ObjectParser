@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ObjectParser">
+</Property><Property Name="Solution File" Value="C:\Users\pc1\Programi\ObjectParser\ObjectParser\ObjectParser.sln">
+</Property><Property Name="User Options File" Value="C:\Users\pc1\Programi\ObjectParser\ObjectParser\ObjectParser.suo">
+</Property><Property Name="Date" Value="3. januar 2010">
+</Property><Property Name="Time" Value="11:00">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ObjectParser.sln" Description="File successfully backed up as C:\Users\pc1\Programi\ObjectParser\ObjectParser\Backup\ObjectParser.sln">
+</Event><Event ErrorLevel="0" Project="" Source="ObjectParser.suo" Description="File successfully backed up as C:\Users\pc1\Programi\ObjectParser\ObjectParser\Backup\ObjectParser.suo">
+</Event><Event ErrorLevel="0" Project="ObjectParser" Source="ObjectParser.csproj" Description="Project file successfully backed up as C:\Users\pc1\Programi\ObjectParser\ObjectParser\Backup\ObjectParser.csproj">
+</Event><Event ErrorLevel="0" Project="ObjectParser" Source="EnvironmentInterface.cs" Description="File successfully backed up as C:\Users\pc1\Programi\ObjectParser\ObjectParser\Backup\EnvironmentInterface.cs">
+</Event><Event ErrorLevel="0" Project="ObjectParser" Source="HTMLInterface.cs" Description="File successfully backed up as C:\Users\pc1\Programi\ObjectParser\ObjectParser\Backup\HTMLInterface.cs">
+</Event><Event ErrorLevel="0" Project="ObjectParser" Source="Parser.cs" Description="File successfully backed up as C:\Users\pc1\Programi\ObjectParser\ObjectParser\Backup\Parser.cs">
+</Event><Event ErrorLevel="0" Project="ObjectParser" Source="Program.cs" Description="File successfully backed up as C:\Users\pc1\Programi\ObjectParser\ObjectParser\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="ObjectParser" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\pc1\Programi\ObjectParser\ObjectParser\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ObjectParser" Source="Tests.cs" Description="File successfully backed up as C:\Users\pc1\Programi\ObjectParser\ObjectParser\Backup\Tests.cs">
+</Event><Event ErrorLevel="0" Project="ObjectParser" Source="Xml.cs" Description="File successfully backed up as C:\Users\pc1\Programi\ObjectParser\ObjectParser\Backup\Xml.cs">
+</Event><Event ErrorLevel="0" Project="ObjectParser" Source="ObjectParser.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ObjectParser" Source="ObjectParser.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ObjectParser.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ObjectParser.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ObjectParser" Source="ObjectParser.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

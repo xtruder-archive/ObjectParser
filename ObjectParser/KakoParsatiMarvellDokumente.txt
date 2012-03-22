@@ -1,0 +1,6 @@
+Preheader 1 je prazen
+Preheader 2 vsi elementi v spanu, kjer so cifre
+Bitfield descriptor se lahko veckrat ponovi elementi so v spanu in delamo more scan med or elementi, filtreramo confidential informacije z negacijo objekta
+Postheader2, elementi so v spanih( Bits, Access, Name, Description )
+BitfieldDescription se lahko veckrat ponovi elementi so v spanu tako uporabimo funkcijo more med or elementi in filtreramo confidential informacije z negacijo objekta.
+	

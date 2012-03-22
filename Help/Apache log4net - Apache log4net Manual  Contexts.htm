@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)http://logging.apache.org/log4net/release/manual/contexts.html -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <TITLE>Apache log4net - 
+        Apache log4net Manual: Contexts</TITLE>
+    <STYLE type="text/css" media="all">
+      @import url("../../css/maven-base.css");
+      @import url("../../css/maven-theme.css");
+      @import url("../../css/site.css");
+    </STYLE>
+    <LINK rel="stylesheet" href="./Apache log4net - Apache log4net Manual  Contexts_files/print.css" type="text/css" media="print">
+          <META name="author" content="
+        Nicko Cadell">
+        
+      <META name="keywords" content="building log4net, log4net"></HEAD><BODY class="composite">
+    <DIV id="banner">
+                  <A href="http://logging.apache.org/" id="bannerLeft">
+    
+                                            <IMG src="./Apache log4net - Apache log4net Manual  Contexts_files/ls-logo.jpg" alt="">
+    
+            </A>
+                    <DIV class="clear">
+        <HR>
+      </DIV>
+    </DIV>
+    <DIV id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+            <DIV class="xleft">
+        Last Published: 08/30/2007
+                          |   
+          <A href="http://www.apache.org/">Apache</A>
+              &gt;
+      
+          <A href="http://logging.apache.org/">Logging Services</A>
+              &gt;
+      
+          <A href="http://logging.apache.org/log4net/">log4net</A>
+                        </DIV>
+            <DIV class="xright">      
+  
+
+  
+    
+  
+  
+  </DIV>
+      <DIV class="clear">
+        <HR>
+      </DIV>
+    </DIV>
+    <DIV id="leftColumn">
+      <DIV id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+                   <H5>Get log4net</H5>
+        <UL>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/download.html">Download</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/release-notes.html">Changes</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/license.html">License</A>
+        </LI>
+          </UL>
+          <H5>Documentation</H5>
+        <UL>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/index.html">About</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/features.html">Features</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/framework-support.html">Supported Frameworks</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/example-apps.html">Example Apps</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/config-examples.html">Config Examples</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/building.html">Building</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/faq.html">FAQ</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/howto/index.html">How Tos</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/sdk/index.html">SDK Reference</A>
+        </LI>
+          </UL>
+          <H5>Manual</H5>
+        <UL>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/manual/introduction.html">Introduction</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/manual/configuration.html">Configuration</A>
+        </LI>
+              
+    <LI class="none">
+              <STRONG>Contexts</STRONG>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/manual/plugins.html">Plugins</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/manual/repositories.html">Repositories</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/manual/internals.html">Internals</A>
+        </LI>
+          </UL>
+          <H5>Community</H5>
+        <UL>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/mail-lists.html">Mailing Lists</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/issue-tracking.html">Issue Tracking</A>
+        </LI>
+          </UL>
+          <H5>Development</H5>
+        <UL>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/source-repository.html">Repository</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/integration.html">Continuous Integration</A>
+        </LI>
+          </UL>
+          <H5>Apache</H5>
+        <UL>
+              
+    <LI class="none">
+              <A href="http://www.apache.org/">Home</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://www.apache.org/foundation/sponsorship.html">Sponsorship</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://www.apache.org/foundation/thanks.html">Thanks</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://www.apachecon.com/">Conferences</A>
+        </LI>
+          </UL>
+                                       <A href="http://maven.apache.org/" title="Built by Maven" id="poweredBy">
+            <IMG alt="Built by Maven" src="./Apache log4net - Apache log4net Manual  Contexts_files/maven-feather.png">
+          </A>
+                       
+  
+
+  
+    
+  
+  
+        </DIV>
+    </DIV>
+    <DIV id="bodyColumn">
+      <DIV id="contentBox">
+        
+
+    
+
+    
+
+    
+        <A name="log4net Manual - Contexts"></A><DIV class="section"><H2>log4net Manual - Contexts</H2>
+            <SECTIONMENU name="Contents"></SECTIONMENU>
+
+            <P>
+                Most real-world systems have to deal with multiple clients simultaneously. In a 
+                typical multithreaded implementation of such a system, different threads will 
+                handle different clients. Logging is especially well suited to trace and debug 
+                complex distributed applications. An approach to differentiate the 
+                logging output of one client from another is to instantiate a new separate 
+                logger for each client. However this promotes the proliferation of loggers and 
+                increases the management overhead of logging.
+            </P>
+            <P>
+                A lighter technique is to uniquely stamp each log request initiated from the 
+                same client interaction.
+            </P>
+            <P>
+                Log4net supports different types of contextual logging and contexts with different scopes.
+            </P>
+            
+            <A name="Scopes"></A><DIV class="section"><H2>Scopes</H2>
+                <P>
+                    Contextual data can be set in different scopes. These contexts have progressively narrower visibility.
+                    In the logging event itself the values from all of the contexts are combined together such that
+                    values specified in a lower scoped context hide values from a higher context.
+                </P>
+                
+                <DIV class="table">
+                    <TABLE class="bodyTable">
+                        <TBODY><TR class="a">
+                            <TH>Scope</TH>
+                            <TH>Type</TH>
+                            <TH>Description</TH>
+                        </TR>
+                        <TR class="b">
+                            <TD>Global</TD>
+                            <TD><SPAN class="code">log4net.GlobalContext</SPAN></TD>
+                            <TD>
+                                The global context is shared by all threads in the current AppDomain.
+                                This context is thread safe for use by multiple threads concurrently.
+                            </TD>
+                        </TR>
+                        <TR class="a">
+                            <TD>Thread</TD>
+                            <TD><SPAN class="code">log4net.ThreadContext</SPAN></TD>
+                            <TD>
+                                The thread context is visible only to the current managed thread.
+                            </TD>
+                        </TR>
+                        <TR class="b">
+                            <TD>Logical Thread</TD>
+                            <TD><SPAN class="code">log4net.ThreadLogicalContext</SPAN></TD>
+                            <TD>
+                                The logical thread context is visible to a logical thread. Logical
+                                threads can jump from one managed thread to another. For more details
+                                see the .NET API <SPAN class="code">System.Runtime.Remoting.Messaging.CallContext</SPAN>.
+                            </TD>
+                        </TR>
+                        <TR class="a">
+                            <TD>Event</TD>
+                            <TD><SPAN class="code">log4net.Core.LoggingEvent</SPAN></TD>
+                            <TD>
+                                Each event captures the current contextual state at the time the event
+                                is generated. Contextual data can be set on the event itself. This context
+                                is only visible to the code generating the event itself.
+                            </TD>
+                        </TR>
+                    </TBODY></TABLE>
+                </DIV>                
+            </DIV>
+            
+            <A name="Context Properties"></A><DIV class="section"><H2>Context Properties</H2>
+                <P>
+                    The log4net contexts store properties, i.e. name value pairs. The name is a string
+                    the value is any object. A property can be set as follows:
+                </P>
+                <DIV class="source"><PRE>log4net.GlobalContext.Properties["name"] = value;
+</PRE></DIV>
+                <P>
+                    If properties with the same name are set in more than one context scope then
+                    the value in the narrowest scope (lower down in the list above) will hide the
+                    other values.
+                </P>
+                <P>
+                    The property values are stored as objects within the <SPAN class="code">LoggingEvent</SPAN>. 
+                    The <SPAN class="code">PatternLayout</SPAN> supports rendering the value of a named
+                    property using the <SPAN class="code">%property{name}</SPAN> syntax. The value is 
+                    converted to a string by passing it to the <SPAN class="code">log4net.ObjectRenderer.RendererMap</SPAN>
+                    which will locate any custom renderer for the value type. The default behavior for
+                    custom types is to call the object's <SPAN class="code">ToString()</SPAN> method.
+                </P>
+                
+                <A name="Active Property Values"></A><DIV class="section"><H2>Active Property Values</H2>
+                    <P>
+                        An active property value is one who's value changes over time.
+                    </P>
+                    <P>
+                        For example, imagine a custom type that implemented the 
+                        <SPAN class="code">ToString()</SPAN> method to return the
+                        number of bytes allocated by the runtime garbage collector. 
+                    </P>
+                <DIV class="source"><PRE>public class GCAllocatedBytesHelper
+{
+    public override string ToString()
+    {
+        return GC.GetTotalMemory(true).ToString();
+    }
+}</PRE></DIV>
+                    <P>
+                        An instance of this type can be added to the <SPAN class="code">log4net.GlobalContext</SPAN> 
+                        during application startup: 
+                    </P>
+                <DIV class="source"><PRE>log4net.GlobalContext.Properties["GCAllocatedBytes"] = new GCAllocatedBytesHelper();
+</PRE></DIV>
+                    <P>
+                        Once this property is set in the context all subsequent logging events will have a property
+                        called <I>GCAllocatedBytes</I>. The value of the property will be an instance of the
+                        <SPAN class="code">GCAllocatedBytesHelper</SPAN> type. When this value is rendered to a 
+                        string by calling the <SPAN class="code">ToString</SPAN> method the current number of bytes 
+                        allocated by the garbage collector will be returned and included in the output.
+                    </P>
+                    
+                </DIV>
+                
+            </DIV>
+            
+            <A name="Context Stacks"></A><DIV class="section"><H2>Context Stacks</H2>
+                <P>
+                    Sometimes simple key value pairs are not the most convenient way of capturing contextual
+                    information. A stack of information is a very convenient way of storing data especially
+                    as our applications tend to be stack based.
+                </P>
+                <P>
+                    The <SPAN class="code">ThreadContext</SPAN> and <SPAN class="code">LogicalThreadContext</SPAN>
+                    also support storing contextual data in a stack. The stack is stored in context property,
+                    therefore stacks have names and more than one stack can exist in the same context. A property
+                    value set in a narrower context would override a stack with the same property name set in a
+                    wider scoped context.
+                </P>
+                <P>
+                    The stack supports <SPAN class="code">Push</SPAN> and <SPAN class="code">Pop</SPAN> methods.
+                    As more contextual data is pushed onto the stack the stack grows. When the stack is rendered
+                    all the data pushed onto the stack is output with the most recent data to the right hand
+                    end of the string.
+                </P>
+                <P>
+                    As the stack is just an object stored in the context properties it is also rendered
+                    using the same <SPAN class="code">PatternLayout</SPAN> syntax: <SPAN class="code">%property{name}</SPAN>.
+                    Where <I>name</I> is the name of the stack.
+                </P>
+                <P>
+                    Calls the the stack's <SPAN class="code">Push</SPAN> and <SPAN class="code">Pop</SPAN>
+                    methods must be matched up so that each push has a corresponding pop. The 
+                    <SPAN class="code">Push</SPAN> method also returns an <SPAN class="code">IDisposable</SPAN>
+                    object that will perform the required pop operation when it is disposed. This allows
+                    the C# <I>using</I> syntax to be used to automate the stack management.
+                </P>
+                <DIV class="source"><PRE>using(log4net.ThreadContext.Stacks["NDC"].Push("context"))
+{
+    log.Info("Message");
+}
+</PRE></DIV>
+                <P>
+                    The INFO level log has a stack stored in its <I>NDC</I> property. The top item in the
+                    stack is the string <I>context</I>.
+                    The <I>using</I> syntax ensures that the value <I>context</I> is popped off the stack
+                    at the end of the block.
+                </P>
+                <P>
+                    The <SPAN class="code">using</SPAN>
+                    syntax is recommended because it removes some work load from the developer and 
+                    reduces errors in matching up the Push and Pop calls, especially when exceptions
+                    can occur.
+                </P>
+            </DIV>
+            
+            <A name="Nested Diagnostic Contexts"></A><DIV class="section"><H2>Nested Diagnostic Contexts</H2>
+                <P>
+                    The <SPAN class="code">NDC</SPAN> (Nested Diagnostic Context) exists for compatibility
+                    with older versions of log4net. This helper class implements a stack which is stored
+                    in the thread context property named <I>NDC</I>.
+                </P>
+            </DIV>
+            
+            <A name="Mapped Diagnostic Contexts"></A><DIV class="section"><H2>Mapped Diagnostic Contexts</H2>
+                <P>
+                    The <SPAN class="code">MDC</SPAN> (MappedDiagnostic Context) exists for compatibility
+                    with older versions of log4net. This helper class implements a properties map which is 
+                    mapped directly through to the thread context properties.
+                </P>
+            </DIV>
+                
+            <P>
+                To illustrate this point, let us take the example of a web service delivering 
+                content to numerous clients. The web service can build the <SPAN class="code">NDC</SPAN> at the very 
+                beginning of the request before executing other code. The contextual 
+                information can be the client's host name and other information inherent to the 
+                request, typically information contained in cookies. Hence, even if the web 
+                service is serving multiple clients simultaneously, the logs initiated by the 
+                same code, i.e. belonging to the same logger, can still be distinguished 
+                because each client request will have a different <SPAN class="code">NDC</SPAN> stack. Contrast this with 
+                the complexity of passing a freshly instantiated logger to all code exercised 
+                during the client's request.
+            </P>
+            <P>
+                Nevertheless, some sophisticated applications, such as virtual hosting web 
+                servers, must log differently depending on the virtual host context and also 
+                depending on the software component issuing the request. Log4net supports 
+                multiple logger repositories. This would allow each virtual host to possess its own copy 
+                of the logger hierarchy. Configuring multiple logger hierarchies is beyond the 
+                scope of this document.
+            </P>
+
+        </DIV>
+    
+
+      </DIV>
+    </DIV>
+    <DIV class="clear">
+      <HR>
+    </DIV>
+    <DIV id="footer">
+      <DIV class="xright">©  
+          2007
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+  </DIV>
+      <DIV class="clear">
+        <HR>
+      </DIV>
+    </DIV>
+  
+
+</BODY></HTML>

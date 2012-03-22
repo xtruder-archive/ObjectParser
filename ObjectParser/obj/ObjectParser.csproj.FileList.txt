@@ -1,0 +1,5 @@
+bin\Debug\ObjectParser.exe
+bin\Debug\ObjectParser.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ObjectParser.exe
+obj\Debug\ObjectParser.pdb

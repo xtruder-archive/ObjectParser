@@ -1,0 +1,1188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)http://logging.apache.org/log4net/release/config-examples.html -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <TITLE>Apache log4net - 
+        Apache log4net: Config Examples</TITLE>
+    <STYLE type="text/css" media="all">
+      @import url("../css/maven-base.css");
+      @import url("../css/maven-theme.css");
+      @import url("../css/site.css");
+    </STYLE>
+    <LINK rel="stylesheet" href="./Apache log4net - Apache log4net  Config Examples_files/print.css" type="text/css" media="print">
+          <META name="author" content="
+        Nicko Cadell">
+        
+      <META name="keywords" content="building log4net, log4net"></HEAD><BODY class="composite">
+    <DIV id="banner">
+                  <A href="http://logging.apache.org/" id="bannerLeft">
+    
+                                            <IMG src="./Apache log4net - Apache log4net  Config Examples_files/ls-logo.jpg" alt="">
+    
+            </A>
+                    <DIV class="clear">
+        <HR>
+      </DIV>
+    </DIV>
+    <DIV id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+            <DIV class="xleft">
+        Last Published: 08/30/2007
+                          |   
+          <A href="http://www.apache.org/">Apache</A>
+              &gt;
+      
+          <A href="http://logging.apache.org/">Logging Services</A>
+              &gt;
+      
+          <A href="http://logging.apache.org/log4net/">log4net</A>
+                        </DIV>
+            <DIV class="xright">      
+  
+
+  
+    
+  
+  
+  </DIV>
+      <DIV class="clear">
+        <HR>
+      </DIV>
+    </DIV>
+    <DIV id="leftColumn">
+      <DIV id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+                   <H5>Get log4net</H5>
+        <UL>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/download.html">Download</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/release-notes.html">Changes</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/license.html">License</A>
+        </LI>
+          </UL>
+          <H5>Documentation</H5>
+        <UL>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/index.html">About</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/features.html">Features</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/framework-support.html">Supported Frameworks</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/example-apps.html">Example Apps</A>
+        </LI>
+              
+    <LI class="none">
+              <STRONG>Config Examples</STRONG>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/building.html">Building</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/faq.html">FAQ</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/howto/index.html">How Tos</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/sdk/index.html">SDK Reference</A>
+        </LI>
+          </UL>
+          <H5>Manual</H5>
+        <UL>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/manual/introduction.html">Introduction</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/manual/configuration.html">Configuration</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/manual/contexts.html">Contexts</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/manual/plugins.html">Plugins</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/manual/repositories.html">Repositories</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/release/manual/internals.html">Internals</A>
+        </LI>
+          </UL>
+          <H5>Community</H5>
+        <UL>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/mail-lists.html">Mailing Lists</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/issue-tracking.html">Issue Tracking</A>
+        </LI>
+          </UL>
+          <H5>Development</H5>
+        <UL>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/source-repository.html">Repository</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://logging.apache.org/log4net/integration.html">Continuous Integration</A>
+        </LI>
+          </UL>
+          <H5>Apache</H5>
+        <UL>
+              
+    <LI class="none">
+              <A href="http://www.apache.org/">Home</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://www.apache.org/foundation/sponsorship.html">Sponsorship</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://www.apache.org/foundation/thanks.html">Thanks</A>
+        </LI>
+              
+    <LI class="none">
+              <A href="http://www.apachecon.com/">Conferences</A>
+        </LI>
+          </UL>
+                                       <A href="http://maven.apache.org/" title="Built by Maven" id="poweredBy">
+            <IMG alt="Built by Maven" src="./Apache log4net - Apache log4net  Config Examples_files/maven-feather.png">
+          </A>
+                       
+  
+
+  
+    
+  
+  
+        </DIV>
+    </DIV>
+    <DIV id="bodyColumn">
+      <DIV id="contentBox">
+        
+
+    
+
+    
+
+    
+        <A name="log4net Config Examples"></A><DIV class="section"><H2>log4net Config Examples</H2>
+        
+            <SECTIONMENU name="Contents"></SECTIONMENU>
+
+            <A name="Overview"></A><DIV class="section"><H2>Overview</H2>
+                <P>
+                    This document presents example configurations for the built-in appenders.
+                    These configurations are designed to work with the 
+                    <SPAN class="code">log4net.Config.DOMConfigurator</SPAN> and the
+                    <SPAN class="code">log4net.Repository.Hierarchy.Hierarchy</SPAN>.
+                </P>
+                <P>
+                    These examples are by no means exhaustive configurations for the appenders.
+                    For a full list of the parameters that can be specified to each appender and
+                    more details on each options see the SDK documentation for the appender.
+                </P>
+            </DIV>
+            
+            <A name="AdoNetAppender"></A><DIV class="section"><H2>AdoNetAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.AdoNetAppender.html">log4net.Appender.AdoNetAppender</A>.
+                </P>
+                <P>
+                    The configuration of the <SPAN class="code">AdoNetAppender</SPAN> depends on the
+                    provider selected for the target database. Here are some examples.
+                </P>
+                <A name="MS SQL Server"></A><DIV class="section"><H2>MS SQL Server</H2>
+                    <P>
+                        The following example shows how to configure the <SPAN class="code">AdoNetAppender</SPAN> 
+                        to log messages to a SQL Server database. The events are written in batches of 100
+                        (<I>BufferSize</I>). The <I>ConnectionType</I> specifies the fully qualified type name
+                        for the <SPAN class="code">System.Data.IDbConnection</SPAN> to use to connect to the
+                        database. The <I>ConnectionString</I> is database provider specific.
+                        The <I>CommandText</I> is either a prepared statement or a stored procedure, in this
+                        case it is a prepared statement. Each parameter to the prepared statement or stored procedure
+                        is specified with its name, database type and a layout that renders the value for the
+                        parameter.
+                    </P>
+                    <P>
+                        The database table definition is:
+                    </P>
+                    <DIV class="source"><PRE>CREATE TABLE [dbo].[Log] (
+    [Id] [int] IDENTITY (1, 1) NOT NULL,
+    [Date] [datetime] NOT NULL,
+    [Thread] [varchar] (255) NOT NULL,
+    [Level] [varchar] (50) NOT NULL,
+    [Logger] [varchar] (255) NOT NULL,
+    [Message] [varchar] (4000) NOT NULL,
+    [Exception] [varchar] (2000) NULL
+)
+                    </PRE></DIV>
+                    <P>
+                        The appender configuration is:
+                    </P>
+                    <DIV class="source"><PRE>&lt;appender name="AdoNetAppender" type="log4net.Appender.AdoNetAppender"&gt;
+    &lt;bufferSize value="100" /&gt;
+    &lt;connectionType value="System.Data.SqlClient.SqlConnection, System.Data, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" /&gt;
+    &lt;connectionString value="data source=[database server];initial catalog=[database name];integrated security=false;persist security info=True;User ID=[user];Password=[password]" /&gt;
+    &lt;commandText value="INSERT INTO Log ([Date],[Thread],[Level],[Logger],[Message],[Exception]) VALUES (@log_date, @thread, @log_level, @logger, @message, @exception)" /&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@log_date" /&gt;
+        &lt;dbType value="DateTime" /&gt;
+        &lt;layout type="log4net.Layout.RawTimeStampLayout" /&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@thread" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="255" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%thread" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@log_level" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="50" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%level" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@logger" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="255" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%logger" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@message" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="4000" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%message" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@exception" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="2000" /&gt;
+        &lt;layout type="log4net.Layout.ExceptionLayout" /&gt;
+    &lt;/parameter&gt;
+&lt;/appender&gt;
+                    </PRE></DIV>
+                </DIV>
+                
+                <A name="MS Access"></A><DIV class="section"><H2>MS Access</H2>
+                    <P>
+                        This example shows how to write events to an Access Database.
+                    </P>
+                    <DIV class="source"><PRE>&lt;appender name="AdoNetAppender_Access" type="log4net.Appender.AdoNetAppender"&gt;
+    &lt;connectionString value="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\log\access.mdb;User Id=;Password=;" /&gt;
+    &lt;commandText value="INSERT INTO Log ([Date],[Thread],[Level],[Logger],[Message]) VALUES (@log_date, @thread, @log_level, @logger, @message)" /&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@log_date" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="255" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%date" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@thread" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="255" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%thread" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@log_level" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="50" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%level" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@logger" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="255" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%logger" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@message" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="1024" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%message" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+&lt;/appender&gt;
+                    </PRE></DIV>
+                </DIV>
+                
+                <A name="Oracle9i"></A><DIV class="section"><H2>Oracle9i</H2>
+                    <P>
+                        This example shows how to write events to an Oracle9i Database.
+                    </P>
+                    <P>
+                        The database table definition is:
+                    </P>
+                    <DIV class="source"><PRE>create table log (
+   Datetime timestamp(3),
+   Thread varchar2(255),
+   Log_Level varchar2(255),
+   Logger varchar2(255),
+   Message varchar2(4000)
+   );
+                    </PRE></DIV>
+                    <P>
+                        The appender configuration is:
+                    </P>
+                    <DIV class="source"><PRE>&lt;appender name="AdoNetAppender_Oracle" type="log4net.Appender.AdoNetAppender"&gt;
+    &lt;connectionType value="System.Data.OracleClient.OracleConnection, System.Data.OracleClient, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" /&gt;
+    &lt;connectionString value="data source=[mydatabase];User ID=[user];Password=[password]" /&gt;
+    &lt;commandText value="INSERT INTO Log (Datetime,Thread,Log_Level,Logger,Message) VALUES (:log_date, :thread, :log_level, :logger, :message)" /&gt;
+    &lt;bufferSize value="128" /&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value=":log_date" /&gt;
+        &lt;dbType value="DateTime" /&gt;
+        &lt;layout type="log4net.Layout.RawTimeStampLayout" /&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value=":thread" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="255" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%thread" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value=":log_level" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="50" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%level" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value=":logger" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="255" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%logger" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value=":message" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="4000" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%message" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+&lt;/appender&gt;
+                    </PRE></DIV>
+                </DIV>
+            
+                <A name="Oracle8i"></A><DIV class="section"><H2>Oracle8i</H2>
+                    <P>
+                        This example shows how to write events to an Oracle8i Database.
+                    </P>
+                    <P>
+                        The database table definition is:
+                    </P>
+                    <DIV class="source"><PRE>CREATE TABLE CSAX30.LOG
+(
+      THREAD      VARCHAR2(255),
+      LOG_LEVEL   VARCHAR2(255),
+      LOGGER      VARCHAR2(255),
+      MESSAGE     VARCHAR2(4000)
+)
+TABLESPACE CSAX30D LOGGING
+                    </PRE></DIV>
+                    <P>
+                        The appender configuration is:
+                    </P>
+                    <DIV class="source"><PRE>&lt;appender name="AdoNetAppender_Oracle" type="log4net.Appender.AdoNetAppender"&gt;
+    &lt;connectionType value ="System.Data.OracleClient.OracleConnection, System.Data.OracleClient, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" /&gt;
+    &lt;connectionString value="data source=&lt;dsname&gt;;User ID=&lt;userid&gt;;Password=&lt;password&gt;" /&gt;
+    &lt;commandText value="INSERT INTO Log (Log_Level,Logger,Message) VALUES (:log_level, :logger, :message)" /&gt;
+    &lt;bufferSize value="250" /&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value=":log_level" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%level" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value=":logger" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%logger" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value=":message" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%message" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+&lt;/appender&gt;
+                    </PRE></DIV>
+                </DIV>
+                
+                <A name="IBM DB2"></A><DIV class="section"><H2>IBM DB2</H2>
+                    <P>
+                        This example shows how to write events to an IBM DB2 8.2 Database.
+                        The following syntax should also work with older DB2 database servers.
+                    </P>
+                    <P>
+                        The database table definition is:
+                    </P>
+                    <DIV class="source"><PRE>CREATE TABLE "myschema.LOG" (
+    "ID" INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (
+        START WITH +1
+        INCREMENT BY +1
+        MINVALUE +1
+        MAXVALUE +2147483647
+        NO CYCLE
+        NO CACHE
+        NO ORDER
+    ),
+    "DATE" TIMESTAMP NOT NULL,
+    "THREAD" VARCHAR(255) NOT NULL,
+    "LEVEL" VARCHAR(500) NOT NULL,
+    "LOGGER" VARCHAR(255) NOT NULL,
+    "MESSAGE" VARCHAR(4000) NOT NULL,
+    "EXCEPTION" VARCHAR(2000)
+)
+IN "LRGTABLES";
+                    </PRE></DIV>
+                    <P>
+                        The appender configuration is:
+                    </P>
+                    <DIV class="source"><PRE>&lt;appender name="AdoNetAppender" type="log4net.Appender.AdoNetAppender"&gt;
+    &lt;bufferSize value="100" /&gt;
+    &lt;connectionType value="IBM.Data.DB2.DB2Connection,IBM.Data.DB2, Version=8.1.2.1" /&gt;
+    &lt;connectionString value="server=192.168.0.0;database=dbuser;user Id=username;password=password;persist security info=true" /&gt;
+    &lt;commandText value="INSERT INTO myschema.Log (Date,Thread,Level,Logger,Message,Exception) VALUES (@log_date,@thread,@log_level,@logger,@message,@exception)" /&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@log_date" /&gt;
+        &lt;dbType value="DateTime" /&gt;
+        &lt;layout type="log4net.Layout.RawTimeStampLayout" /&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@thread" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="255" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%thread" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@log_level" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="500" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%level" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@logger" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="255" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%logger" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@message" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="4000" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%message" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@exception" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;size value="2000" /&gt;
+        &lt;layout type="log4net.Layout.ExceptionLayout" /&gt;
+    &lt;/parameter&gt;
+&lt;/appender&gt;
+                    </PRE></DIV>
+                </DIV>
+                
+                
+                <A name="SQLite"></A><DIV class="section"><H2>SQLite</H2>
+                    <P>
+                        This example shows how to write events to a SQLite Database.
+                        This was tested against v0.21 of the 
+                        <A href="http://sourceforge.net/projects/adodotnetsqlite">SQLite .NET provider</A>.
+                    </P>
+                    <P>
+                        SQLite doesn't have strongly-typed columns or field lengths but its 
+                        recommended you still include this information for readability. 
+                        The database table definition is:
+                    </P>
+                    <DIV class="source"><PRE>CREATE TABLE Log (
+    LogId        INTEGER PRIMARY KEY,
+    Date        DATETIME NOT NULL,
+    Level        VARCHAR(50) NOT NULL,
+    Logger        VARCHAR(255) NOT NULL,
+    Message        TEXT DEFAULT NULL
+);
+                    </PRE></DIV>
+                    <P>
+                        The appender configuration is:
+                    </P>
+                    <DIV class="source"><PRE>&lt;appender name="AdoNetAppender" type="log4net.Appender.AdoNetAppender"&gt;
+    &lt;bufferSize value="100" /&gt;
+    &lt;connectionType value="Finisar.SQLite.SQLiteConnection, SQLite.NET, Version=0.21.1869.3794, Culture=neutral, PublicKeyToken=c273bd375e695f9c" /&gt;
+    &lt;connectionString value="Data Source=c:\\inetpub\\wwwroot\\logs\\log4net.db;Version=3;" /&gt;
+    &lt;commandText value="INSERT INTO Log (Date, Level, Logger, Message) VALUES (@Date, @Level, @Logger, @Message)" /&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@Date" /&gt;
+        &lt;dbType value="DateTime" /&gt;
+        &lt;layout type="log4net.Layout.RawTimeStampLayout" /&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@Level" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%level" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@Logger" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%logger" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+    &lt;parameter&gt;
+        &lt;parameterName value="@Message" /&gt;
+        &lt;dbType value="String" /&gt;
+        &lt;layout type="log4net.Layout.PatternLayout"&gt;
+            &lt;conversionPattern value="%message" /&gt;
+        &lt;/layout&gt;
+    &lt;/parameter&gt;
+&lt;/appender&gt;
+                    </PRE></DIV>
+                </DIV>
+                
+            </DIV>
+                
+            
+            <A name="AspNetTraceAppender"></A><DIV class="section"><H2>AspNetTraceAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.AspNetTraceAppender.html">log4net.Appender.AspNetTraceAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">AspNetTraceAppender</SPAN> 
+                    to log messages to the ASP.NET TraceContext. The messages are written to the 
+                    <SPAN class="code">System.Web.TraceContext.Write</SPAN> method if they are below
+                    level <SPAN class="code">WARN</SPAN>. If they are <SPAN class="code">WARN</SPAN> or above they are written to the 
+                    <SPAN class="code">System.Web.TraceContext.Warn</SPAN> method.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="AspNetTraceAppender" type="log4net.Appender.AspNetTraceAppender" &gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="BufferingForwardingAppender"></A><DIV class="section"><H2>BufferingForwardingAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.BufferingForwardingAppender.html">log4net.Appender.BufferingForwardingAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">BufferingForwardingAppender</SPAN> 
+                    to buffer 100 messages before delivering them to the <I>ConsoleAppender</I>.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="BufferingForwardingAppender" type="log4net.Appender.BufferingForwardingAppender" &gt;
+    &lt;bufferSize value="100"/&gt;
+    &lt;appender-ref ref="ConsoleAppender" /&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    This example shows how to deliver only significant events. A <SPAN class="code">LevelEvaluator</SPAN>
+                    is specified with a threshold of <SPAN class="code">WARN</SPAN>. This means that the events will only
+                    be delivered when a message with level of <SPAN class="code">WARN</SPAN> or higher level is logged.
+                    Up to 512 (<I>BufferSize</I>) previous messages of any level will also be delivered to provide context
+                    information. Messages not sent will be discarded.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="BufferingForwardingAppender" type="log4net.Appender.BufferingForwardingAppender" &gt;
+    &lt;bufferSize value="512" /&gt;
+    &lt;lossy value="true" /&gt;
+    &lt;evaluator type="log4net.Core.LevelEvaluator"&gt;
+        &lt;threshold value="WARN"/&gt;
+    &lt;/evaluator&gt;
+    &lt;appender-ref ref="ConsoleAppender" /&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="ColoredConsoleAppender"></A><DIV class="section"><H2>ColoredConsoleAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.ColoredConsoleAppender.html">log4net.Appender.ColoredConsoleAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">ColoredConsoleAppender</SPAN> 
+                    to log messages to the console. By default the messages are sent to the console
+                    standard output stream. This example shows how to highlight error messages.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="ColoredConsoleAppender" type="log4net.Appender.ColoredConsoleAppender"&gt;
+    &lt;mapping&gt;
+        &lt;level value="ERROR" /&gt;
+        &lt;foreColor value="White" /&gt;
+        &lt;backColor value="Red, HighIntensity" /&gt;
+    &lt;/mapping&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    This example shows how to colorize multiple levels.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="ColoredConsoleAppender" type="log4net.Appender.ColoredConsoleAppender"&gt;
+    &lt;mapping&gt;
+        &lt;level value="ERROR" /&gt;
+        &lt;foreColor value="White" /&gt;
+        &lt;backColor value="Red, HighIntensity" /&gt;
+    &lt;/mapping&gt;
+    &lt;mapping&gt;
+        &lt;level value="DEBUG" /&gt;
+        &lt;backColor value="Green" /&gt;
+    &lt;/mapping&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="ConsoleAppender"></A><DIV class="section"><H2>ConsoleAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.ConsoleAppender.html">log4net.Appender.ConsoleAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">ConsoleAppender</SPAN> 
+                    to log messages to the console. By default the messages are sent to the console
+                    standard output stream.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="ConsoleAppender" type="log4net.Appender.ConsoleAppender"&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    This example shows how to direct the log messages to the console error stream.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="ConsoleAppender" type="log4net.Appender.ConsoleAppender"&gt;
+    &lt;target value="Console.Error" /&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="EventLogAppender"></A><DIV class="section"><H2>EventLogAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.EventLogAppender.html">log4net.Appender.EventLogAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">EventLogAppender</SPAN> to log
+                    to the <I>Application</I> event log on the local machine using the
+                    event <I>Source</I> of the <SPAN class="code">AppDomain.FriendlyName</SPAN>.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="EventLogAppender" type="log4net.Appender.EventLogAppender" &gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    This example shows how to configure the <SPAN class="code">EventLogAppender</SPAN> to
+                    use a specific event <I>Source</I>.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="EventLogAppender" type="log4net.Appender.EventLogAppender" &gt;
+    &lt;applicationName value="MyApp" /&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    For more information on how to setup the event log to allow the
+                    <SPAN class="code">EventLogAppender</SPAN> to write to it, see the
+                    FAQ: <A href="http://logging.apache.org/log4net/release/faq.html#trouble-EventLog">Why doesn't the EventLogAppender work?</A>.
+                </P>
+            </DIV>
+            
+            <A name="FileAppender"></A><DIV class="section"><H2>FileAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.FileAppender.html">log4net.Appender.FileAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">FileAppender</SPAN>
+                    to write messages to a file. The file specified is <I>log-file.txt</I>. The file will
+                    be appended to rather than overwritten each time the logging process starts.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="FileAppender" type="log4net.Appender.FileAppender"&gt;
+    &lt;file value="log-file.txt" /&gt;
+    &lt;appendToFile value="true" /&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    This example shows how to configure the file name to write to using
+                    an environment variable <I>TMP</I>. The encoding to use to write
+                    to the file is also specified.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="FileAppender" type="log4net.Appender.FileAppender"&gt;
+    &lt;file value="${TMP}\log-file.txt" /&gt;
+    &lt;appendToFile value="true" /&gt;
+    &lt;encoding value="unicodeFFFE" /&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    This example shows how to configure the appender to use the minimal locking
+                    model that allows multiple processes to write to the same file.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="FileAppender" type="log4net.Appender.FileAppender"&gt;
+    &lt;file value="${TMP}\log-file.txt" /&gt;
+    &lt;appendToFile value="true" /&gt;
+    &lt;lockingModel type="log4net.Appender.FileAppender+MinimalLock" /&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="ForwardingAppender"></A><DIV class="section"><H2>ForwardingAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.ForwardingAppender.html">log4net.Appender.ForwardingAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">ForwardingAppender</SPAN>.
+                    The forwarding appender allows a set of constraints to be used to decorate an appender.
+                    In this example the <I>ConsoleAppender</I> is decorated with a <I>Threshold</I> of
+                    level <SPAN class="code">WARN</SPAN>. This means that an event directed to the <I>ConsoleAppender</I>
+                    directly will be logged regardless of its level, but an event directed to the <I>ForwardingAppender</I>
+                    will only be passed on to the <I>ConsoleAppender</I> if its level is <SPAN class="code">WARN</SPAN>
+                    or higher. This appender is used only in special circumstances.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="ForwardingAppender" type="log4net.Appender.ForwardingAppender" &gt;
+    &lt;threshold value="WARN"/&gt;
+    &lt;appender-ref ref="ConsoleAppender" /&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="MemoryAppender"></A><DIV class="section"><H2>MemoryAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.MemoryAppender.html">log4net.Appender.MemoryAppender</A>.
+                </P>
+                <P>
+                    It is unlikely that the <SPAN class="code">MemoryAppender</SPAN> will be configured
+                    using a config file, but if you want to do it here's how.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="MemoryAppender" type="log4net.Appender.MemoryAppender"&gt;
+    &lt;onlyFixPartialEventData value="true" /&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="NetSendAppender"></A><DIV class="section"><H2>NetSendAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.NetSendAppender.html">log4net.Appender.NetSendAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">NetSendAppender</SPAN>
+                    to deliver messages to a specific user's screen. As this appender is typically only
+                    used for important notifications a <I>Threshold</I> of level <SPAN class="code">Error</SPAN>
+                    is specified. This example delivers the messages to the user <I>nicko</I> on the
+                    machine <I>SQUARE</I>. However things are not always straight forward using the Windows
+                    Messenger Service, one possible outcome using this configuration is that the <I>Server</I>
+                    will broadcast looking for a WINS server which it will then ask to deliver the message
+                    to the <I>Recipient</I>, the WINS server will deliver it to the first terminal that the
+                    user logged in from.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="NetSendAppender" type="log4net.Appender.NetSendAppender"&gt;
+    &lt;threshold value="ERROR" /&gt;
+    &lt;server value="SQUARE" /&gt;
+    &lt;recipient value="nicko" /&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="OutputDebugStringAppender"></A><DIV class="section"><H2>OutputDebugStringAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.OutputDebugStringAppender.html">log4net.Appender.OutputDebugStringAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">OutputDebugStringAppender</SPAN>
+                    to write logging messages to the <SPAN class="code">OutputDebugString</SPAN> API.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="OutputDebugStringAppender" type="log4net.Appender.OutputDebugStringAppender" &gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="RemotingAppender"></A><DIV class="section"><H2>RemotingAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.RemotingAppender.html">log4net.Appender.RemotingAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">RemotingAppender</SPAN>
+                    to deliver logging events to a specified <I>Sink</I> (in this example
+                    the sink is <SPAN class="code">tcp://localhost:8085/LoggingSink</SPAN>).
+                    In this example the events are delivered in blocks of 95 events because
+                    of the <I>BufferSize</I>. No events are discarded. The <I>OnlyFixPartialEventData</I>
+                    option allows the appender to ignore certain logging event properties that
+                    can be very slow to generate (e.g. the calling location information).
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="RemotingAppender" type="log4net.Appender.RemotingAppender" &gt;
+    &lt;sink value="tcp://localhost:8085/LoggingSink" /&gt;
+    &lt;lossy value="false" /&gt;
+    &lt;bufferSize value="95" /&gt;
+    &lt;onlyFixPartialEventData value="true" /&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    This example configures the <SPAN class="code">RemotingAppender</SPAN> to
+                    deliver the events only when an event with level <SPAN class="code">ERROR</SPAN>
+                    or above is logged. When the events are delivered, up to 200 (<I>BufferSize</I>) 
+                    previous events (regardless of level) will be delivered to provide context.
+                    Events not delivered will be discarded.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="RemotingAppender" type="log4net.Appender.RemotingAppender" &gt;
+    &lt;sink value="tcp://localhost:8085/LoggingSink" /&gt;
+    &lt;lossy value="true" /&gt;
+    &lt;bufferSize value="200" /&gt;
+    &lt;onlyFixPartialEventData value="true" /&gt;
+    &lt;evaluator type="log4net.Core.LevelEvaluator"&gt;
+        &lt;threshold value="ERROR"/&gt;
+    &lt;/evaluator&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="RollingFileAppender"></A><DIV class="section"><H2>RollingFileAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.RollingFileAppender.html">log4net.Appender.RollingFileAppender</A>.
+                </P>
+                <P>
+                    The <SPAN class="code">RollingFileAppender</SPAN> builds on the
+                    <SPAN class="code">FileAppender</SPAN> and has the same options
+                    as that appender.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">RollingFileAppender</SPAN>
+                    to write to the file <I>log.txt</I>. The file written to will always be called <I>log.txt</I>
+                    because the <I>StaticLogFileName</I> param is specified. The file will be rolled based on
+                    a size constraint (<I>RollingStyle</I>). Up to 10 (<I>MaxSizeRollBackups</I>)
+                    old files of 100 KB each (<I>MaximumFileSize</I>) will be kept. These rolled files will be
+                    named: <I>log.txt.1</I>, <I>log.txt.2</I>, <I>log.txt.3</I>, etc...
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="RollingFileAppender" type="log4net.Appender.RollingFileAppender"&gt;
+    &lt;file value="log.txt" /&gt;
+    &lt;appendToFile value="true" /&gt;
+    &lt;rollingStyle value="Size" /&gt;
+    &lt;maxSizeRollBackups value="10" /&gt;
+    &lt;maximumFileSize value="100KB" /&gt;
+    &lt;staticLogFileName value="true" /&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    This example show how to configure the <SPAN class="code">RollingFileAppender</SPAN>
+                    to roll log files on a date period. This example will roll the log file every minute!
+                    To change the rolling period adjust the <SPAN class="code">DatePattern</SPAN> value.
+                    For example, a date pattern of <SPAN class="code">"yyyyMMdd"</SPAN> will roll every day.
+                    See <SPAN class="code">System.Globalization.DateTimeFormatInfo</SPAN> for a list of available patterns.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="RollingLogFileAppender" type="log4net.Appender.RollingFileAppender"&gt;
+    &lt;file value="logfile" /&gt;
+    &lt;appendToFile value="true" /&gt;
+    &lt;rollingStyle value="Date" /&gt;
+    &lt;datePattern value="yyyyMMdd-HHmm" /&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    This example show how to configure the <SPAN class="code">RollingFileAppender</SPAN>
+                    to roll log files on a date period and within a date period on file size. For each day
+                    only the last 10 files of 1MB will be kept.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="RollingLogFileAppender" type="log4net.Appender.RollingFileAppender"&gt;
+    &lt;file value="logfile" /&gt;
+    &lt;appendToFile value="true" /&gt;
+    &lt;rollingStyle value="Composite" /&gt;
+    &lt;datePattern value="yyyyMMdd" /&gt;
+    &lt;maxSizeRollBackups value="10" /&gt;
+    &lt;maximumFileSize value="1MB" /&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    This example show how to configure the <SPAN class="code">RollingFileAppender</SPAN>
+                    to roll log files once per program execution. The <SPAN class="code">appendToFile</SPAN>
+                    property is set to <SPAN class="code">false</SPAN> to prevent the appender from overwriting
+                    the existing files. The <SPAN class="code">maxSizeRollBackups</SPAN> is set to negative
+                    1 to allow an infinite number of backup files. The file size does have to be limited but
+                    here it is set to 50 Gigabytes which, if a log file exceeds this size limit during a single
+                    run then it will also be rolled.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="RollingLogFileAppender" type="log4net.Appender.RollingFileAppender"&gt;
+    &lt;file value="logfile.txt" /&gt;
+    &lt;appendToFile value="false" /&gt;
+    &lt;rollingStyle value="Size" /&gt;
+    &lt;maxSizeRollBackups value="-1" /&gt;
+    &lt;maximumFileSize value="50GB" /&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="SmtpAppender"></A><DIV class="section"><H2>SmtpAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.SmtpAppender.html">log4net.Appender.SmtpAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">SmtpAppender</SPAN>
+                    to deliver log events via SMTP email. The <I>To</I>, <I>From</I>, <I>Subject</I> and
+                    <I>SmtpHost</I> are required parameters.
+                    This example shows how to deliver only significant events. A <SPAN class="code">LevelEvaluator</SPAN>
+                    is specified with a threshold of <SPAN class="code">WARN</SPAN>. This means that an email
+                    will be sent for each <SPAN class="code">WARN</SPAN> or higher level message that is logged.
+                    Each email will also contain up to 512 (<I>BufferSize</I>) previous messages of any level to
+                    provide context. Messages not sent will be discarded.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="SmtpAppender" type="log4net.Appender.SmtpAppender"&gt;
+    &lt;to value="to@domain.com" /&gt;
+    &lt;from value="from@domain.com" /&gt;
+    &lt;subject value="test logging message" /&gt;
+    &lt;smtpHost value="SMTPServer.domain.com" /&gt;
+    &lt;bufferSize value="512" /&gt;
+    &lt;lossy value="true" /&gt;
+    &lt;evaluator type="log4net.Core.LevelEvaluator"&gt;
+        &lt;threshold value="WARN"/&gt;
+    &lt;/evaluator&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%newline%date [%thread] %-5level %logger [%property{NDC}] - %message%newline%newline%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    This example shows how to configure the <SPAN class="code">SmtpAppender</SPAN>
+                    to deliver all messages in emails with 512 (<I>BufferSize</I>) messages per
+                    email.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="SmtpAppender" type="log4net.Appender.SmtpAppender"&gt;
+    &lt;to value="to@domain.com" /&gt;
+    &lt;from value="from@domain.com" /&gt;
+    &lt;subject value="test logging message" /&gt;
+    &lt;smtpHost value="SMTPServer.domain.com" /&gt;
+    &lt;bufferSize value="512" /&gt;
+    &lt;lossy value="false" /&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%newline%date [%thread] %-5level %logger [%property{NDC}] - %message%newline%newline%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+                <P>
+                    This example shows a more verbose formatting layout for the mail messages.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="SmtpAppender" type="log4net.Appender.SmtpAppender,log4net"&gt;
+    &lt;to value="to@domain.com" /&gt;
+    &lt;from value="from@domain.com" /&gt;
+    &lt;subject value="test logging message" /&gt;
+    &lt;smtpHost value="SMTPServer.domain.com" /&gt;
+    &lt;bufferSize value="512" /&gt;
+    &lt;lossy value="false" /&gt;
+    &lt;evaluator type="log4net.Core.LevelEvaluator,log4net"&gt;
+        &lt;threshold value="WARN" /&gt;
+    &lt;/evaluator&gt;
+    &lt;layout type="log4net.Layout.PatternLayout,log4net"&gt;
+        &lt;conversionPattern value="%property{log4net:HostName} :: %level :: %message %newlineLogger: %logger%newlineThread: %thread%newlineDate: %date%newlineNDC: %property{NDC}%newline%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="SmtpPickupDirAppender"></A><DIV class="section"><H2>SmtpPickupDirAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.SmtpPickupDirAppender.html">log4net.Appender.SmtpPickupDirAppender</A>.
+                </P>
+                <P>
+                    The <SPAN class="code">SmtpPickupDirAppender</SPAN> is configured similarly
+                    to the <SPAN class="code">SmtpAppender</SPAN>. The only difference is that rather
+                    than specify a <I>SmtpHost</I> parameter a <I>PickupDir</I> must be specified.
+                </P>
+                <P>
+                    The <I>PickupDir</I> parameter is a path that must exist and the code executing the
+                    appender must have permission to create new files and write to them in this directory.
+                    The path is relative to the application's base directory (<SPAN class="code">AppDomain.BaseDirectory</SPAN>).
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">SmtpPickupDirAppender</SPAN>
+                    to deliver log events via SMTP email. The <I>To</I>, <I>From</I>, <I>Subject</I> and
+                    <I>PickupDir</I> are required parameters.
+                    This example shows how to deliver only significant events. A <SPAN class="code">LevelEvaluator</SPAN>
+                    is specified with a threshold of <SPAN class="code">WARN</SPAN>. This means that an email
+                    will be sent for each <SPAN class="code">WARN</SPAN> or higher level message that is logged.
+                    Each email will also contain up to 512 (<I>BufferSize</I>) previous messages of any level to
+                    provide context. Messages not sent will be discarded.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="SmtpPickupDirAppender" type="log4net.Appender.SmtpPickupDirAppender"&gt;
+    &lt;to value="to@domain.com" /&gt;
+    &lt;from value="from@domain.com" /&gt;
+    &lt;subject value="test logging message" /&gt;
+    &lt;pickupDir value="C:\SmtpPickup" /&gt;
+    &lt;bufferSize value="512" /&gt;
+    &lt;lossy value="true" /&gt;
+    &lt;evaluator type="log4net.Core.LevelEvaluator"&gt;
+        &lt;threshold value="WARN"/&gt;
+    &lt;/evaluator&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%newline%date [%thread] %-5level %logger [%property{NDC}] - %message%newline%newline%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="TraceAppender"></A><DIV class="section"><H2>TraceAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.TraceAppender.html">log4net.Appender.TraceAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">TraceAppender</SPAN>
+                    to log messages to the <SPAN class="code">System.Diagnostics.Trace</SPAN> system.
+                    This is the tracing system supplied with the .net base class libraries.
+                    See the MSDN documentation for the <SPAN class="code">System.Diagnostics.Trace</SPAN>
+                    class for more details on how to configure the trace system.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="TraceAppender" type="log4net.Appender.TraceAppender"&gt;
+    &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+            
+            <A name="UdpAppender"></A><DIV class="section"><H2>UdpAppender</H2>
+                <P>
+                    For full details see the SDK Reference entry: <A href="http://logging.apache.org/log4net/release/sdk/log4net.Appender.UdpAppender.html">log4net.Appender.UdpAppender</A>.
+                </P>
+                <P>
+                    The following example shows how to configure the <SPAN class="code">UdpAppender</SPAN>
+                    to send events to a <I>RemoteAddress</I> on the specified <I>RemotePort</I>.
+                </P>
+                <DIV class="source"><PRE>&lt;appender name="UdpAppender" type="log4net.Appender.UdpAppender"&gt;
+    &lt;localPort value="8080" /&gt;
+    &lt;remoteAddress value="224.0.0.1" /&gt;
+    &lt;remotePort value="8080" /&gt;
+    &lt;layout type="log4net.Layout.PatternLayout, log4net"&gt;
+        &lt;conversionPattern value="%-5level %logger [%property{NDC}] - %message%newline" /&gt;
+    &lt;/layout&gt;
+&lt;/appender&gt;
+                </PRE></DIV>
+            </DIV>
+        </DIV>
+        
+    
+
+      </DIV>
+    </DIV>
+    <DIV class="clear">
+      <HR>
+    </DIV>
+    <DIV id="footer">
+      <DIV class="xright">©  
+          2007
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+  </DIV>
+      <DIV class="clear">
+        <HR>
+      </DIV>
+    </DIV>
+  
+
+</BODY></HTML>

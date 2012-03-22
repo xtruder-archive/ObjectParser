@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HTMLInterface2.cs" ctype="Workbench">
+    <Files>
+      <File FileName="Parser.cs" Line="161" Column="10" />
+      <File FileName="HTMLInterface.cs" Line="5" Column="7" />
+      <File FileName="HTMLInterface2.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="ObjectLogger" expanded="True" />
+          <Node name="ObjectParser" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="HTMLInterface.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
+</Properties>
